@@ -22,4 +22,9 @@ public class JianmallApplicationTests {
         System.out.println(category.toString());
     }
 
+    @Test
+    public void queryByIdTest() {
+        Category category = categoryMapper.queryById(100001);
+        System.out.println(category.toString());
+    }
 }
